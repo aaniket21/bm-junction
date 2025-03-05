@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/output.css">
 </head>
-<body>
+<body class="bg-gray-200">
     <!-- NAVBAR -->
         <nav class="bg-blue-900 text-white shadow-lg">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -57,7 +57,74 @@
             </div>
         </nav>
 
-    
+    <!-- FOOTER -->
+        <footer class="bg-blue-900 text-white pt-12 pb-6">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    
+                    <!-- Brand & Social Links -->
+                    <div>
+                        <div class="flex items-center space-x-2 mb-4">
+                            <span class="text-xl font-bold">🏗️ BM JUNCTION</span>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            Your one-stop solution for finding all types of construction workers.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-300 hover:text-white">🔵 Facebook</a>
+                            <a href="#" class="text-gray-300 hover:text-white">🐦 Twitter</a>
+                            <a href="#" class="text-gray-300 hover:text-white">📸 Instagram</a>
+                            <a href="#" class="text-gray-300 hover:text-white">🔗 LinkedIn</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Links -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="/" class="text-gray-300 hover:text-white">Home</a></li>
+                            <li><a href="#services" class="text-gray-300 hover:text-white">Services</a></li>
+                            <li><a href="#categories" class="text-gray-300 hover:text-white">Categories</a></li>
+                            <li><a href="#about" class="text-gray-300 hover:text-white">About Us</a></li>
+                            <li><a href="#contact" class="text-gray-300 hover:text-white">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Categories -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Categories</h3>
+                        <ul class="space-y-2">
+                            <li><a href="/category/plumbers" class="text-gray-300 hover:text-white">Plumbers</a></li>
+                            <li><a href="/category/electricians" class="text-gray-300 hover:text-white">Electricians</a></li>
+                            <li><a href="/category/carpenters" class="text-gray-300 hover:text-white">Carpenters</a></li>
+                            <li><a href="/category/painters" class="text-gray-300 hover:text-white">Painters</a></li>
+                            <!-- <li><a href="/category/masons" class="text-gray-300 hover:text-white">Masons</a></li> -->
+                        </ul>
+                    </div>
+                    
+                    <!-- Contact Us -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center space-x-2">
+                                📍 <span class="text-gray-300">Muzaffarpur, Bihar</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                📞 <span class="text-gray-300">+91 9999999999</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                ✉️ <span class="text-gray-300">info@bmjunction.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Copyright -->
+                <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-300">
+                    <p>&copy; <span id="year"></span> BM JUNCTION. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
     <!-- Link to External JavaScript File -->
     <script src="script.js"></script>
 </body>
