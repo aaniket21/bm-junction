@@ -6,9 +6,8 @@
     <title>BM JUNCTION - Construction Worker Marketplace</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/output.css">
-    <link rel="stylesheet" href="/src/style.css">
 </head>
-<body class="bg-gray-200">
+<body class="bg-white">
     <!-- NAVBAR -->
         <nav class="bg-blue-900 text-white shadow-lg">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -22,16 +21,16 @@
                             <span class="text-xl font-bold">BM JUNCTION</span>
                         </a>
                     </div>
-    
+
                     <!-- Desktop Menu -->
-                    <div class="hidden md:flex items-center space-x-8">
+                    <div class="md:flex hidden items-center space-x-8">
                         <a href="#" class="hover:text-yellow-300 transition-colors">Home</a>
                         <a href="#services" class="hover:text-yellow-300 transition-colors">Services</a>
                         <a href="#categories" class="hover:text-yellow-300 transition-colors">Categories</a>
                         <a href="#about" class="hover:text-yellow-300 transition-colors">About Us</a>
                         <a href="#contact" class="hover:text-yellow-300 transition-colors">Contact</a>
                     </div>
-    
+
                     <!-- Mobile Menu Button -->
                     <div class="md:hidden flex items-center">
                         <button id="menuToggle" class="text-white focus:outline-none">
@@ -47,7 +46,6 @@
                     </div>
                 </div>
             </div>
-    
             <!-- Mobile Menu -->
             <div id="mobileMenu" class="hidden md:hidden bg-blue-800 px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="#" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700">Home</a>
@@ -57,7 +55,6 @@
                 <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700">Contact</a>
             </div>
         </nav>
-
     <!-- BODY -->
 
         <!-- Hero Section -->
@@ -90,7 +87,7 @@
         </section>
     
         <!-- Services Section -->
-        <section class="py-20 bg-gray-50">
+        <section class="py-20 mt-12 mb-0 bg-gray-50 opacity-0 transform translate-y-[-50px] animate-fade-in-up">
             <div class="max-w-6xl mx-auto text-center">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Our Services</h2>
                 <p class="mt-4 text-lg text-gray-600">
@@ -100,8 +97,8 @@
         
             <div class="mt-12 grid gap-6 sm:grid-cols-2 md:grid-cols-4 max-w-6xl mx-auto">
                 <!-- Card 1 -->
-                <div class="bg-white shadow-lg rounded-2xl p-6 text-center">
-                    <div class="text-blue-500 text-4xl mb-4">
+                <div class="bg-white shadow-lg rounded-2xl p-6 text-center transition-transform duration-200 ease-in-out transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50 bg-gradient-to-r from-blue-50 to-white">
+                    <div class="text-blue-500 text-4xl mb-4 animate-bounce">
                         🔰
                     </div>
                     <h3 class="text-lg font-semibold text-gray-900">Verified Professionals</h3>
@@ -111,8 +108,8 @@
                 </div>
         
                 <!-- Card 2 -->
-                <div class="bg-white shadow-lg rounded-2xl p-6 text-center">
-                    <div class="text-blue-500 text-4xl mb-4">
+                <div class="bg-white shadow-lg rounded-2xl p-6 text-center transition-transform duration-200 ease-in-out transform hover:scale-105 hover:shadow-2xl hover:shadow-green-500/50 bg-gradient-to-r from-green-50 to-white">
+                    <div class="text-green-500 text-4xl mb-4 animate-bounce">
                         ⏳
                     </div>
                     <h3 class="text-lg font-semibold text-gray-900">Quick Booking</h3>
@@ -122,8 +119,8 @@
                 </div>
         
                 <!-- Card 3 -->
-                <div class="bg-white shadow-lg rounded-2xl p-6 text-center">
-                    <div class="text-blue-500 text-4xl mb-4">
+                <div class="bg-white shadow-lg rounded-2xl p-6 text-center transition-transform duration-200 ease-in-out transform hover:scale-105 hover:shadow-2xl hover:shadow-yellow-500/50 bg-gradient-to-r from-yellow-50 to-white">
+                    <div class="text-yellow-500 text-4xl mb-4 animate-bounce">
                         ✅
                     </div>
                     <h3 class="text-lg font-semibold text-gray-900">Quality Assurance</h3>
@@ -133,8 +130,8 @@
                 </div>
         
                 <!-- Card 4 -->
-                <div class="bg-white shadow-lg rounded-2xl p-6 text-center">
-                    <div class="text-blue-500 text-4xl mb-4">
+                <div class="bg-white shadow-lg rounded-2xl p-6 text-center transition-transform duration-200 ease-in-out transform hover:scale-105 hover:shadow-2xl hover:shadow-red-500/50 bg-gradient-to-r from-red-50 to-white">
+                    <div class="text-red-500 text-4xl mb-4 animate-bounce">
                         👥
                     </div>
                     <h3 class="text-lg font-semibold text-gray-900">Large Network</h3>
@@ -144,9 +141,8 @@
                 </div>
             </div>
         </section>
-    
         <!-- How It Works -->
-        <section class="py-20 bg-gray-100">
+        <section class="py-20 mt-0 bg-gray-100">
             <div class="max-w-5xl mx-auto text-center">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900">How It Works</h2>
                 <p class="mt-4 text-lg text-gray-600">
@@ -192,7 +188,7 @@
         
     
         <!-- Worker Categories -->
-        <section class="py-20 bg-gray-100">
+        <section class="py-20 bg-gradient-to-b from-gray-100 to-gray-50">
             <div class="max-w-5xl mx-auto text-center">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Worker Categories</h2>
                 <p class="mt-4 text-lg text-gray-600">
@@ -202,78 +198,47 @@
         
             <div class="mt-12 grid gap-6 md:grid-cols-3 max-w-6xl mx-auto">
                 <!-- Category: Plumbers -->
-                <div class="bg-white shadow-lg rounded-2xl p-8 text-center">
-                    <div class="text-blue-600 text-4xl mb-4">
-                        🔧
-                    </div>
-                    <h3 class="text-lg font-semibold text-gray-900">Plumbers</h3>
-                    <p class="mt-2 text-gray-600">
-                        Expert plumbers for all your pipe and fixture needs.
-                    </p>
-                    <a href="#" class="mt-4 inline-block bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-medium">
-                        View Workers
-                    </a>
+                <div class="worker-card">
+                    <div class="worker-icon text-blue-600">🔧</div>
+                    <h3>Plumbers</h3>
+                    <p>Expert plumbers for all your pipe and fixture needs.</p>
+                    <a href="#" class="worker-button">View Workers</a>
                 </div>
         
                 <!-- Category: Electricians -->
-                <div class="bg-white shadow-lg rounded-2xl p-8 text-center">
-                    <div class="text-yellow-500 text-4xl mb-4">
-                        ⚡
-                    </div>
-                    <h3 class="text-lg font-semibold text-gray-900">Electricians</h3>
-                    <p class="mt-2 text-gray-600">
-                        Skilled electricians for wiring and electrical systems.
-                    </p>
-                    <a href="#" class="mt-4 inline-block bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-medium">
-                        View Workers
-                    </a>
+                <div class="worker-card">
+                    <div class="worker-icon text-yellow-500 animate-spin-hover">⚡</div>
+                    <h3>Electricians</h3>
+                    <p>Skilled electricians for wiring and electrical systems.</p>
+                    <a href="#" class="worker-button">View Workers</a>
                 </div>
         
                 <!-- Category: Carpenters -->
-                <div class="bg-white shadow-lg rounded-2xl p-8 text-center">
-                    <div class="text-orange-500 text-4xl mb-4">
-                        🛠️
-                    </div>
-                    <h3 class="text-lg font-semibold text-gray-900">Carpenters</h3>
-                    <p class="mt-2 text-gray-600">
-                        Professional carpenters for woodwork and furniture.
-                    </p>
-                    <a href="#" class="mt-4 inline-block bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-medium">
-                        View Workers
-                    </a>
+                <div class="worker-card">
+                    <div class="worker-icon text-orange-500">🛠️</div>
+                    <h3>Carpenters</h3>
+                    <p>Professional carpenters for woodwork and furniture.</p>
+                    <a href="#" class="worker-button">View Workers</a>
                 </div>
         
                 <!-- Category: Painters -->
-                <div class="bg-white shadow-lg rounded-2xl p-8 text-center">
-                    <div class="text-red-500 text-4xl mb-4">
-                        🖌️
-                    </div>
-                    <h3 class="text-lg font-semibold text-gray-900">Painters</h3>
-                    <p class="mt-2 text-gray-600">
-                        Experienced painters for interior and exterior painting.
-                    </p>
-                    <a href="#" class="mt-4 inline-block bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-medium">
-                        View Workers
-                    </a>
+                <div class="worker-card">
+                    <div class="worker-icon text-red-500">🖌️</div>
+                    <h3>Painters</h3>
+                    <p>Experienced painters for interior and exterior painting.</p>
+                    <a href="#" class="worker-button">View Workers</a>
                 </div>
         
                 <!-- Category: Masons -->
-                <div class="bg-white shadow-lg rounded-2xl p-8 text-center">
-                    <div class="text-gray-600 text-4xl mb-4">
-                        ⛏️
-                    </div>
-                    <h3 class="text-lg font-semibold text-gray-900">Masons</h3>
-                    <p class="mt-2 text-gray-600">
-                        Skilled masons for brickwork and concrete structures.
-                    </p>
-                    <a href="#" class="mt-4 inline-block bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-medium">
-                        View Workers
-                    </a>
+                <div class="worker-card">
+                    <div class="worker-icon text-gray-600">⛏️</div>
+                    <h3>Masons</h3>
+                    <p>Skilled masons for brickwork and concrete structures.</p>
+                    <a href="#" class="worker-button">View Workers</a>
                 </div>
             </div>
         </section>
         
-    
         <!-- Testimonials -->
         <section class="py-20 bg-blue-900 text-white">
             <div class="max-w-5xl mx-auto text-center">

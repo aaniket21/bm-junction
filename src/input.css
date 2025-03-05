@@ -1,1 +1,109 @@
 @import "tailwindcss";
+
+@keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out forwards;
+  }
+
+  @keyframes fadeInDrop {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeInDrop {
+    animation: fadeInDrop 0.10s ease-out forwards;
+}
+
+.worker-card {
+    background: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 32px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Hover Effect: Lift + Glow */
+.worker-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.95);
+}
+
+/* Icon Animation */
+.worker-icon {
+    font-size: 40px;
+    margin-bottom: 16px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect: Icon Bounce */
+.worker-card:hover .worker-icon {
+    transform: scale(1.2) translateY(-5px);
+}
+
+/* Button Styling */
+.worker-button {
+    display: inline-block;
+    background: linear-gradient(90deg, #3b82f6, #1e40af);
+    color: white;
+    padding: 10px 24px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
+}
+
+/* Hover Effect: Button Glow */
+.worker-button:hover {
+    background: linear-gradient(90deg, #1e40af, #3b82f6);
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5);
+}
+
+/* Scroll Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Icon Hover Effect - Slow Spin */
+@keyframes spinHover {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(15deg);
+    }
+}
+
+.animate-spin-hover:hover {
+    animation: spinHover 0.4s ease-in-out;
+}
