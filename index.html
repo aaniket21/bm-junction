@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BM JUNCTION - Construction Worker Marketplace</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+        <nav class="bg-blue-900 text-white shadow-lg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-16 items-center">
+                    <!-- Logo -->
+                    <div class="flex items-center">
+                        <a href="#" class="flex items-center space-x-2">
+                            <svg class="h-8 w-8 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2a7 7 0 00-7 7v1H4a2 2 0 00-2 2v4a2 2 0 002 2v2h16v-2a2 2 0 002-2v-4a2 2 0 00-2-2h-1V9a7 7 0 00-7-7zm-5 8V9a5 5 0 0110 0v1zm-3 2h16v4H4zm2 6h12v1H6zm8-4h2v2h-2zm-4 0h2v2h-2z"/>
+                            </svg>
+                            <span class="text-xl font-bold">BM JUNCTION</span>
+                        </a>
+                    </div>
+    
+                    <!-- Desktop Menu -->
+                    <div class="hidden md:flex items-center space-x-8">
+                        <a href="#" class="hover:text-yellow-300 transition-colors">Home</a>
+                        <a href="#services" class="hover:text-yellow-300 transition-colors">Services</a>
+                        <a href="#categories" class="hover:text-yellow-300 transition-colors">Categories</a>
+                        <a href="#about" class="hover:text-yellow-300 transition-colors">About Us</a>
+                        <a href="#contact" class="hover:text-yellow-300 transition-colors">Contact</a>
+                    </div>
+    
+                    <!-- Mobile Menu Button -->
+                    <div class="md:hidden flex items-center">
+                        <button id="menuToggle" class="text-white focus:outline-none">
+                            <!-- Menu Icon (White) -->
+                            <svg id="menuIcon" class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/>
+                            </svg>
+                            <!-- Close Icon (Hidden Initially) -->
+                            <svg id="closeIcon" class="h-6 w-6 text-white hidden" fill="currentColor" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 18L18 6M6 6l12 12"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden bg-blue-800 px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700">Home</a>
+                <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700">Services</a>
+                <a href="#categories" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700">Categories</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700">About Us</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700">Contact</a>
+            </div>
+        </nav>
+
+    
+    <!-- Link to External JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
