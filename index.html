@@ -6,6 +6,7 @@
     <title>BM JUNCTION - Construction Worker Marketplace</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/output.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body class="bg-white">
     <!-- NAVBAR -->
@@ -197,44 +198,65 @@
             </div>
         
             <div class="mt-12 grid gap-6 md:grid-cols-3 max-w-6xl mx-auto">
-                <!-- Category: Plumbers -->
+                <!-- Worker Cards -->
                 <div class="worker-card">
                     <div class="worker-icon text-blue-600">🔧</div>
                     <h3>Plumbers</h3>
                     <p>Expert plumbers for all your pipe and fixture needs.</p>
-                    <a href="#" class="worker-button">View Workers</a>
+                    <div class="btn-container">
+                        <div class="btn-wrapper">
+                            <a href="#" class="btn-flip front" style="background: linear-gradient(45deg, #ff80bf, #ff6699); box-shadow: 0 0 15px rgba(255, 128, 191, 0.7);">View Workers</a>
+                            <a href="#" class="btn-flip back" style="background: linear-gradient(45deg, #66ccff, #3399ff); box-shadow: 0 0 15px rgba(102, 204, 255, 0.7);">Find Plumbers</a>
+                        </div>
+                    </div>
                 </div>
         
-                <!-- Category: Electricians -->
                 <div class="worker-card">
-                    <div class="worker-icon text-yellow-500 animate-spin-hover">⚡</div>
+                    <div class="worker-icon text-yellow-500 animate-spin">⚡</div>
                     <h3>Electricians</h3>
                     <p>Skilled electricians for wiring and electrical systems.</p>
-                    <a href="#" class="worker-button">View Workers</a>
+                    <div class="btn-container">
+                        <div class="btn-wrapper">
+                            <a href="#" class="btn-flip front" style="background: linear-gradient(45deg, #ffcc66, #ffaa33); box-shadow: 0 0 15px rgba(255, 204, 102, 0.7);">View Workers</a>
+                            <a href="#" class="btn-flip back" style="background: linear-gradient(45deg, #ff9966, #ff6633); box-shadow: 0 0 15px rgba(255, 153, 102, 0.7);">Find Electricians</a>
+                        </div>
+                    </div>
                 </div>
         
-                <!-- Category: Carpenters -->
                 <div class="worker-card">
                     <div class="worker-icon text-orange-500">🛠️</div>
                     <h3>Carpenters</h3>
                     <p>Professional carpenters for woodwork and furniture.</p>
-                    <a href="#" class="worker-button">View Workers</a>
+                    <div class="btn-container">
+                        <div class="btn-wrapper">
+                            <a href="#" class="btn-flip front" style="background: linear-gradient(45deg, #ff9966, #ff6633); box-shadow: 0 0 15px rgba(255, 153, 102, 0.7);">View Workers</a>
+                            <a href="#" class="btn-flip back" style="background: linear-gradient(45deg, #ffcc66, #ffaa33); box-shadow: 0 0 15px rgba(255, 204, 102, 0.7);">Find Carpenters</a>
+                        </div>
+                    </div>
                 </div>
         
-                <!-- Category: Painters -->
                 <div class="worker-card">
                     <div class="worker-icon text-red-500">🖌️</div>
                     <h3>Painters</h3>
                     <p>Experienced painters for interior and exterior painting.</p>
-                    <a href="#" class="worker-button">View Workers</a>
+                    <div class="btn-container">
+                        <div class="btn-wrapper">
+                            <a href="#" class="btn-flip front" style="background: linear-gradient(45deg, #ff6666, #ff3333); box-shadow: 0 0 15px rgba(255, 102, 102, 0.7);">View Workers</a>
+                            <a href="#" class="btn-flip back" style="background: linear-gradient(45deg, #ff9966, #ff6633); box-shadow: 0 0 15px rgba(255, 153, 102, 0.7);">Find Painters</a>
+                        </div>
+                    </div>
                 </div>
         
-                <!-- Category: Masons -->
                 <div class="worker-card">
                     <div class="worker-icon text-gray-600">⛏️</div>
                     <h3>Masons</h3>
                     <p>Skilled masons for brickwork and concrete structures.</p>
-                    <a href="#" class="worker-button">View Workers</a>
+                    <div class="btn-container">
+                        <div class="btn-wrapper">
+                            <a href="#" class="btn-flip front" style="background: linear-gradient(45deg, #999999, #666666); box-shadow: 0 0 15px rgba(153, 153, 153, 0.7);">View Workers</a>
+                            <a href="#" class="btn-flip back" style="background: linear-gradient(45deg, #cccccc, #999999); box-shadow: 0 0 15px rgba(204, 204, 204, 0.7);">Find Masons</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

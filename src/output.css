@@ -61,6 +61,7 @@
     --ease-in: cubic-bezier(0.4, 0, 1, 1);
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --animate-spin: spin 1s linear infinite;
     --animate-bounce: bounce 1s infinite;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -761,6 +762,9 @@
   }
   .animate-none {
     animation: none;
+  }
+  .animate-spin {
+    animation: var(--animate-spin);
   }
   .touch-pinch-zoom {
     --tw-pinch-zoom: pinch-zoom;
@@ -2475,47 +2479,6 @@
 .animate-fadeInDrop {
   animation: fadeInDrop 0.10s ease-out forwards;
 }
-.worker-card {
-  background: white;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 16px;
-  padding: 32px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeInUp 0.6s ease-out forwards;
-}
-.worker-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-  background: rgba(255, 255, 255, 0.95);
-}
-.worker-icon {
-  font-size: 40px;
-  margin-bottom: 16px;
-  transition: transform 0.3s ease;
-}
-.worker-card:hover .worker-icon {
-  transform: scale(1.2) translateY(-5px);
-}
-.worker-button {
-  display: inline-block;
-  background: linear-gradient(90deg, #3b82f6, #1e40af);
-  color: white;
-  padding: 10px 24px;
-  border-radius: 50px;
-  font-size: 14px;
-  font-weight: 600;
-  margin-top: 12px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
-}
-.worker-button:hover {
-  background: linear-gradient(90deg, #1e40af, #3b82f6);
-  transform: scale(1.1);
-  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5);
-}
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -2536,6 +2499,72 @@
 }
 .animate-spin-hover:hover {
   animation: spinHover 0.4s ease-in-out;
+}
+.worker-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.worker-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+.worker-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.btn-container {
+  position: relative;
+  width: 180px;
+  height: 55px;
+  margin: 10px auto;
+  perspective: 1200px;
+}
+.btn-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+.btn-container:hover .btn-wrapper {
+  transform: rotateY(180deg);
+}
+.btn-flip {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  backface-visibility: hidden;
+}
+.front {
+  background: linear-gradient(45deg, #a8e6cf, #dcedc1);
+  box-shadow: 0 0 10px rgba(168, 230, 207, 0.7);
+}
+.back {
+  background: linear-gradient(45deg, #ffd3b6, #ffaaa5);
+  transform: rotateY(180deg);
+  box-shadow: 0 0 10px rgba(255, 163, 133, 0.7);
+}
+.ripple {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  transform: scale(0);
+  opacity: 0;
 }
 @property --tw-translate-x {
   syntax: "*";
@@ -2863,6 +2892,11 @@
 @property --tw-contain-style {
   syntax: "*";
   inherits: false;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 @keyframes bounce {
   0%, 100% {
