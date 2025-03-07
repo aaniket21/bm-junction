@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BM JUNCTION - Construction Worker Marketplace</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/output.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body class="bg-white">
+    <!-- NAVBAR -->
+        <nav class="bg-blue-900 text-white shadow-lg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-16 items-center">
+                    <!-- Logo -->
+                    <div class="flex items-center">
+                        <a href="#" class="flex items-center space-x-2">
+                            <svg class="h-8 w-8 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2a7 7 0 00-7 7v1H4a2 2 0 00-2 2v4a2 2 0 002 2v2h16v-2a2 2 0 002-2v-4a2 2 0 00-2-2h-1V9a7 7 0 00-7-7zm-5 8V9a5 5 0 0110 0v1zm-3 2h16v4H4zm2 6h12v1H6zm8-4h2v2h-2zm-4 0h2v2h-2z"/>
+                            </svg>
+                            <span class="text-xl font-bold">BM JUNCTION</span>
+                        </a>
+                    </div>
+        
+                    <!-- Desktop Menu -->
+                    <div class="md:flex hidden items-center space-x-8">
+                        <a href="index.html" class="hover:text-yellow-300 transition-colors">Home</a>
+                        <a href="index.html" class="hover:text-yellow-300 transition-colors">Services</a>
+                        <a href="#" class="hover:text-yellow-300 transition-colors">Categories</a>
+                        <a href="#about" class="hover:text-yellow-300 transition-colors">About Us</a>
+                        <a href="#contact" class="hover:text-yellow-300 transition-colors">Contact</a>
+                    </div>
+        
+                    <!-- Mobile Menu Button -->
+                    <div class="md:hidden flex items-center">
+                        <button id="menuToggle" class="text-white focus:outline-none">
+                            <!-- Menu Icon (White) -->
+                            <svg id="menuIcon" class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/>
+                            </svg>
+                            <!-- Close Icon (Hidden Initially) -->
+                            <svg id="closeIcon" class="h-6 w-6 text-white hidden" fill="currentColor" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 18L18 6M6 6l12 12"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden bg-blue-800 px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700">Home</a>
+                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700">Services</a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700">Categories</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700">About Us</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700">Contact</a>
+            </div>
+        </nav>
+    <!-- BODY -->
+        <section class="py-20 bg-gradient-to-b from-gray-100 to-gray-50">
+            <div class="max-w-5xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Worker Categories</h2>
+                <p class="mt-4 text-lg text-gray-600">
+                    Browse through our categories to find the right professional for your specific needs.
+                </p>
+            </div>
+        
+            <div class="mt-12 grid gap-6 md:grid-cols-3 max-w-6xl mx-auto">
+                <!-- Worker Cards -->
+                <div class="worker-card">
+                    <div class="worker-icon text-blue-600">🔧</div>
+                    <h3>Plumbers</h3>
+                    <p>Expert plumbers for all your pipe and fixture needs.</p>
+                    <div class="btn-container">
+                        <div class="btn-wrapper">
+                            <a href="#" class="btn-flip front" style="background: linear-gradient(45deg, #ff80bf, #ff6699); box-shadow: 0 0 15px rgba(255, 128, 191, 0.7);">View Workers</a>
+                            <a href="#" class="btn-flip back" style="background: linear-gradient(45deg, #66ccff, #3399ff); box-shadow: 0 0 15px rgba(102, 204, 255, 0.7);">Find Plumbers</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="worker-card">
+                    <div class="worker-icon text-yellow-500 animate-spin">⚡</div>
+                    <h3>Electricians</h3>
+                    <p>Skilled electricians for wiring and electrical systems.</p>
+                    <div class="btn-container">
+                        <div class="btn-wrapper">
+                            <a href="#" class="btn-flip front" style="background: linear-gradient(45deg, #ffcc66, #ffaa33); box-shadow: 0 0 15px rgba(255, 204, 102, 0.7);">View Workers</a>
+                            <a href="#" class="btn-flip back" style="background: linear-gradient(45deg, #ff9966, #ff6633); box-shadow: 0 0 15px rgba(255, 153, 102, 0.7);">Find Electricians</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="worker-card">
+                    <div class="worker-icon text-orange-500">🛠️</div>
+                    <h3>Carpenters</h3>
+                    <p>Professional carpenters for woodwork and furniture.</p>
+                    <div class="btn-container">
+                        <div class="btn-wrapper">
+                            <a href="#" class="btn-flip front" style="background: linear-gradient(45deg, #ff9966, #ff6633); box-shadow: 0 0 15px rgba(255, 153, 102, 0.7);">View Workers</a>
+                            <a href="#" class="btn-flip back" style="background: linear-gradient(45deg, #ffcc66, #ffaa33); box-shadow: 0 0 15px rgba(255, 204, 102, 0.7);">Find Carpenters</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="worker-card">
+                    <div class="worker-icon text-red-500">🖌️</div>
+                    <h3>Painters</h3>
+                    <p>Experienced painters for interior and exterior painting.</p>
+                    <div class="btn-container">
+                        <div class="btn-wrapper">
+                            <a href="#" class="btn-flip front" style="background: linear-gradient(45deg, #ff6666, #ff3333); box-shadow: 0 0 15px rgba(255, 102, 102, 0.7);">View Workers</a>
+                            <a href="#" class="btn-flip back" style="background: linear-gradient(45deg, #ff9966, #ff6633); box-shadow: 0 0 15px rgba(255, 153, 102, 0.7);">Find Painters</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="worker-card">
+                    <div class="worker-icon text-gray-600">⛏️</div>
+                    <h3>Masons</h3>
+                    <p>Skilled masons for brickwork and concrete structures.</p>
+                    <div class="btn-container">
+                        <div class="btn-wrapper">
+                            <a href="#" class="btn-flip front" style="background: linear-gradient(45deg, #999999, #666666); box-shadow: 0 0 15px rgba(153, 153, 153, 0.7);">View Workers</a>
+                            <a href="#" class="btn-flip back" style="background: linear-gradient(45deg, #cccccc, #999999); box-shadow: 0 0 15px rgba(204, 204, 204, 0.7);">Find Masons</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- FOOTER -->
+        <footer class="bg-blue-900 text-white pt-12 pb-6">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    
+                    <!-- Brand & Social Links -->
+                    <div>
+                        <div class="flex items-center space-x-2 mb-4">
+                            <span class="text-xl font-bold">🏗️ BM JUNCTION</span>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            Your one-stop solution for finding all types of construction workers.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-300 hover:text-white">🔵 Facebook</a>
+                            <a href="#" class="text-gray-300 hover:text-white">🐦 Twitter</a>
+                            <a href="#" class="text-gray-300 hover:text-white">📸 Instagram</a>
+                            <a href="#" class="text-gray-300 hover:text-white">🔗 LinkedIn</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Links -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="index.html" class="text-gray-300 hover:text-white">Home</a></li>
+                            <li><a href="#services" class="text-gray-300 hover:text-white">Services</a></li>
+                            <li><a href="/" class="text-gray-300 hover:text-white">Categories</a></li>
+                            <li><a href="#about" class="text-gray-300 hover:text-white">About Us</a></li>
+                            <li><a href="#contact" class="text-gray-300 hover:text-white">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Categories -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Categories</h3>
+                        <ul class="space-y-2">
+                            <li><a href="/category/plumbers" class="text-gray-300 hover:text-white">Plumbers</a></li>
+                            <li><a href="/category/electricians" class="text-gray-300 hover:text-white">Electricians</a></li>
+                            <li><a href="/category/carpenters" class="text-gray-300 hover:text-white">Carpenters</a></li>
+                            <li><a href="/category/painters" class="text-gray-300 hover:text-white">Painters</a></li>
+                            <li><a href="/category/masons" class="text-gray-300 hover:text-white">Masons</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Contact Us -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center space-x-2">
+                                📍 <span class="text-gray-300">Muzaffarpur, Bihar</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                📞 <span class="text-gray-300">+91 9999999999</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                ✉️ <span class="text-gray-300">info@bmjunction.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Copyright -->
+                <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-300">
+                    <p>&copy; <span id="year"></span> BM JUNCTION. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    <!-- Link to External JavaScript File -->
+    <script src="/src/script.js"></script>
+</body>
+</html>
